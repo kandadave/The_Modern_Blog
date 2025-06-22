@@ -56,7 +56,7 @@ Search for posts by title or author.
 ### Local Development
 If you want to run the project locally, follow these steps:
 
-### Installation Process
+#### Installation Process
 
 Clone this repository using:
 
