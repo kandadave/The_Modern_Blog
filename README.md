@@ -1,15 +1,15 @@
-The Modern Blog
+#The Modern Blog
 A dynamic, interactive blog application built with HTML, CSS, and JavaScript, featuring a mock backend with JSON Server.
 
 By David Chumo
 
-Description
+##Description
 This is a minimalist, yet robust, blog post management application. It's designed to showcase fundamental web development concepts including asynchronous data fetching, DOM manipulation, event handling, and dynamic content updates using vanilla HTML, CSS, and JavaScript. The application leverages JSON Server to simulate a backend API, allowing users to perform CRUD (Create, Read, Update, Delete) operations on blog posts with persistence.
 
-Screenshot
+##Screenshot
 ![alt text](Screenshot_20250622_194804.png)
 
-Features
+##Features
 View All Posts: See a comprehensive list of all blog post titles and associated images when the page loads.
 
 View Post Details: Click on any post title to view its full details, including the title, content, author, and a larger image, displayed dynamically without a page reload.
@@ -26,8 +26,8 @@ Responsive Design: The application features a clean, modern, and interactive use
 
 Client-Side Operations: All DOM manipulations and content updates occur smoothly without requiring a full page reload, providing a seamless user experience.
 
-How to Use
-Requirements
+##How to Use
+###Requirements
 A computer with Node.js installed (for npm commands).
 
 Access to the internet.
@@ -38,7 +38,7 @@ A code editor (VS Code recommended).
 
 Terminal/Command Line.
 
-View Live Site
+###View Live Site
 Visit the deployed application at: [Insert Live Site URL Here - e.g., Your GitHub Pages URL]
 
 The live site allows you to:
@@ -53,10 +53,10 @@ Delete posts.
 
 Search for posts by title or author.
 
-Local Development
+###Local Development
 If you want to run the project locally, follow these steps:
 
-Installation Process
+###Installation Process
 
 Clone this repository using:
 
@@ -90,7 +90,7 @@ Your default web browser should automatically open the index.html file, typicall
 
 Alternatively, if you use VS Code, you can install the "Live Server" extension and click "Go Live" from the bottom bar while index.html is open.
 
-Technologies Used
+##Technologies Used
 HTML5: For structuring the web content.
 
 CSS3: For styling and creating the appealing, responsive layout, primarily using Tailwind CSS.
@@ -99,12 +99,12 @@ JavaScript (ES6+): For all interactive functionalities, DOM manipulation, and as
 
 JSON Server: A lightweight server used to create a fake REST API quickly, providing persistence for blog posts to the db.json file.
 
-Support and Contact Details
+##Support and Contact Details
 If you have any questions, suggestions, or need assistance, please contact:
 
 Email: david.chumo@student.moringaschool.com
 
-License
+###License
 MIT License Copyright © 2025 David Chumo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
