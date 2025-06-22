@@ -6,7 +6,7 @@ By David Chumo
 ## Description
 This is a minimalist, yet robust, blog post management application. It's designed to showcase fundamental web development concepts including asynchronous data fetching, DOM manipulation, event handling, and dynamic content updates using vanilla HTML, CSS, and JavaScript. The application leverages JSON Server to simulate a backend API, allowing users to perform CRUD (Create, Read, Update, Delete) operations on blog posts with persistence.
 
-## Screenshot
+### Screenshot
 ![alt text](Screenshot_20250622_194804.png)
 
 ## Features
