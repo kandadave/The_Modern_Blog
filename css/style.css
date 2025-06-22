@@ -1,0 +1,39 @@
+/* Custom styles */
+body {
+  font-family: "Inter", sans-serif;
+  /* Ensure a smooth scroll for anchored elements */
+  scroll-behavior: smooth;
+}
+
+/* Custom styles for post list items */
+.post-item {
+  cursor: pointer;
+  /* Tailwind classes handle most of the styling now */
+  /* Added for consistency and clarity for `selected` state */
+}
+
+/* Visual feedback for selected post item */
+.post-item.selected {
+  background-color: #dbeafe; /* Tailwind blue-100 */
+  border-left: 5px solid #3b82f6; /* Tailwind blue-500 */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2); /* Soft shadow for selected item */
+}
+
+/* Custom scrollbar for post-list on webkit browsers */
+#post-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#post-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#post-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Tailwind gray-300 */
+  border-radius: 10px;
+}
+
+#post-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* Tailwind gray-400 */
+}
