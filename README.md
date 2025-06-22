@@ -20,8 +20,6 @@ Edit Existing Posts: Modify the title and content of any existing blog post usin
 
 Delete Posts: Remove posts from the list and the backend with a simple click of a dedicated delete button.
 
-Search Functionality: Find specific posts quickly by searching based on their title or author.
-
 Responsive Design: The application features a clean, modern, and interactive user interface designed to adapt gracefully to different screen sizes, ensuring a great experience on desktop, tablet, and mobile devices, thanks to Tailwind CSS.
 
 Client-Side Operations: All DOM manipulations and content updates occur smoothly without requiring a full page reload, providing a seamless user experience.
