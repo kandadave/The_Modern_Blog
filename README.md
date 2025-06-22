@@ -84,7 +84,7 @@ Start the Frontend (Live Server): Open a new terminal window in the project dire
 
 live-server
 
-Your default web browser should automatically open the index.html file, typically at http://127.0.0.1:5500 or http://localhost:5500.
+Your default web browser should automatically open the index.html file, typically at http://127.0.0.1:8000 or http://localhost:8000.
 
 Alternatively, if you use VS Code, you can install the "Live Server" extension and click "Go Live" from the bottom bar while index.html is open.
 
