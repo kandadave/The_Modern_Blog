@@ -1,5 +1,5 @@
 // Base URL for the JSON Server API
-const BASE_URL = 'https://json-server-blog-app.onrender.com/posts';
+const BASE_URL = 'https://json-server-blog-app-1.onrender.com/posts';
 
 // Global variable to store the ID of the currently selected post
 let currentPostId = null;
@@ -81,7 +81,7 @@ function fetchJson(url, options = {}) {
 function displayPosts(searchTerm = '') {
     renderMessage(postListDiv, 'Loading posts...');
 
-    let url = `${BASE_URL}/posts`;
+    let url = `${BASE_URL}`;
 
     return fetchJson(url) // Ensure fetchJson is returned here
         .then(posts => {
@@ -158,7 +158,7 @@ function handlePostClick(postId) {
     renderMessage(postDetailDiv, 'Loading post details...');
     editPostForm.classList.add('hidden'); // Ensure edit form is hidden
 
-    return fetchJson(`${BASE_URL}/posts/${postId}`) // Ensure fetchJson is returned here
+    return fetchJson(`${BASE_URL}/${postId}`) // Ensure fetchJson is returned here
         .then(post => {
             postDetailDiv.innerHTML = `
                 <h3 class="text-4xl font-extrabold text-blue-800 mb-4">${post.title}</h3>
@@ -213,7 +213,7 @@ function addNewPostListener() {
             image: image || 'https://placehold.co/400x300/cccccc/333333?text=No+Image'
         };
 
-        fetchJson(`${BASE_URL}/posts`, {
+        fetchJson(`${BASE_URL}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPost)
@@ -259,7 +259,7 @@ function handleEditSubmit() {
             content: updatedContent
         };
 
-        fetchJson(`${BASE_URL}/posts/${postId}`, {
+        fetchJson(`${BASE_URL}/${postId}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedPostData)
@@ -302,7 +302,7 @@ function deletePost(postId) {
         return; // User cancelled
     }
 
-    fetchJson(`${BASE_URL}/posts/${postId}`, { method: 'DELETE' })
+    fetchJson(`${BASE_URL}/${postId}`, { method: 'DELETE' })
         .then(() => {
             console.log('Post deleted:', postId);
 
@@ -314,7 +314,7 @@ function deletePost(postId) {
             clearPostDetail(); // Clear detail view
 
             // After deletion, re-evaluate what to display: the first remaining post or an empty message
-            return fetchJson(`${BASE_URL}/posts`);
+            return fetchJson(`${BASE_URL}`);
         })
         .then(remainingPosts => {
             if (remainingPosts.length > 0) {
