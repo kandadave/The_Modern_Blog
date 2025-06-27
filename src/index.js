@@ -16,6 +16,7 @@ const cancelEditButton = document.getElementById('cancel-edit');
  * Replaces the image source with a "Broken Image" placeholder.
  */
 function handleImageError(event) {
+    event.preventDefault();
     event.target.src = 'https://placehold.co/80x80/cccccc/333333?text=Broken+Img'; // For list items
     event.target.alt = 'Image failed to load';
     // For larger images in detail view, use a different placeholder size
@@ -33,6 +34,7 @@ function renderMessage(element, message, isError = false) {
 
 //Updates the 'selected' class on post items in the list.
 function updateSelectedPostUI(newPostId) {
+    newPostId.preventDefault();
     // Remove 'selected' class from previously selected item
     if (currentPostId) {
         const prevSelected = document.querySelector(`.post-item[data-id="${currentPostId}"]`);
@@ -153,6 +155,7 @@ function displayPosts(searchTerm = '') {
 //Fetches and displays the details of a specific blog post in the #post-detail div.
 //Highlights the selected post in the list.
 function handlePostClick(postId) {
+    postId.preventDefault()
     updateSelectedPostUI(postId); // Update selection UI
 
     renderMessage(postDetailDiv, 'Loading post details...');
