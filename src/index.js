@@ -34,7 +34,6 @@ function renderMessage(element, message, isError = false) {
 
 //Updates the 'selected' class on post items in the list.
 function updateSelectedPostUI(newPostId) {
-    newPostId.preventDefault();
     // Remove 'selected' class from previously selected item
     if (currentPostId) {
         const prevSelected = document.querySelector(`.post-item[data-id="${currentPostId}"]`);
@@ -155,7 +154,6 @@ function displayPosts(searchTerm = '') {
 //Fetches and displays the details of a specific blog post in the #post-detail div.
 //Highlights the selected post in the list.
 function handlePostClick(postId) {
-    postId.preventDefault()
     updateSelectedPostUI(postId); // Update selection UI
 
     renderMessage(postDetailDiv, 'Loading post details...');
