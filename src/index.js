@@ -1,5 +1,5 @@
 // Base URL for the JSON Server API
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://json-server-blog-app.onrender.com/posts';
 
 // Global variable to store the ID of the currently selected post
 let currentPostId = null;
