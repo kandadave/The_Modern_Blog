@@ -37,7 +37,7 @@ A code editor (VS Code recommended).
 Terminal/Command Line.
 
 ### View Live Site
-Visit the deployed application at: https://kandadave.github.io/The_Modern_Blog/
+Visit the deployed application at: [Modern Blog](https://kandadave.github.io/The_Modern_Blog/)
 
 *Ensure that the JSON server is running when accessing the live site. You can follow the steps on how to run the JSON server in the local development section below(from installing JSON server to starting the backend JSON server).* 
 
