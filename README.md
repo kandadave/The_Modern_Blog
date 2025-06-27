@@ -26,74 +26,74 @@ Client-Side Operations: All DOM manipulations and content updates occur smoothly
 
 ## How to Use
 ### Requirements
-A computer with Node.js installed (for npm commands).
+1. A computer with Node.js installed (for npm commands).
 
-Access to the internet.
+2. Access to the internet.
 
-A modern web browser (e.g., Chrome, Firefox, Edge, Safari).
+3. A modern web browser (e.g., Chrome, Firefox, Edge, Safari).
 
-A code editor (VS Code recommended).
+4. A code editor (VS Code recommended).
 
-Terminal/Command Line.
+5. Terminal/Command Line.
 
 ### View Live Site
 Visit the deployed application at: [Modern Blog](https://kandadave.github.io/The_Modern_Blog/)
 
 The live site allows you to:
 
-Add new blog posts.
+- Add new blog posts.
 
-View details of any post by clicking its title.
+- View details of any post by clicking its title.
 
-Edit post titles and content.
+- Edit post titles and content.
 
-Delete posts.
+- Delete posts.
 
 ### Local Development
 If you want to run the project locally, follow these steps:
 
 #### Installation Process
 
-Clone this repository using:
+- Clone this repository using:
 
-git clone https://github.com/kandadave/The_Modern_Blog
+  git clone https://github.com/kandadave/The_Modern_Blog
 
-or by downloading a ZIP file of the code.
+   or by downloading a ZIP file of the code.
 
-Navigate to the project directory:
+- Navigate to the project directory:
 
-cd Code-Challenge-2
+  cd Code-Challenge-2
 
-Install JSON Server: This will act as your mock backend API.
+- Install JSON Server: This will act as your mock backend API.
 
-npm install -g json-server@0.17.4
+  npm install -g json-server@0.17.4
 
-Install Live Server: This will serve your frontend files.
+- Install Live Server: This will serve your frontend files.
 
-npm install -g live-server
+  npm install -g live-server
 
-Start the Backend (JSON Server): Open your terminal in the project directory and run:
+- Start the Backend (JSON Server): Open your terminal in the project directory and run:
 
-json-server db.json
+  json-server db.json
 
-This will start the mock API, usually accessible at http://localhost:3000. Keep this terminal window open.
+  This will start the mock API, usually accessible at http://localhost:3000. Keep this terminal window open.
 
-Start the Frontend (Live Server): Open a new terminal window in the project directory and run:
+- Start the Frontend (Live Server): Open a new terminal window in the project directory and run:
 
-live-server
+  live-server
 
-Your default web browser should automatically open the index.html file, typically at http://127.0.0.1:8080 or http://localhost:8080.
+  Your default web browser should automatically open the index.html file, typically at http://127.0.0.1:8080 or http://localhost:8080.
 
-Alternatively, if you use VS Code, you can install the "Live Server" extension and click "Go Live" from the bottom bar while index.html is open.
+- Alternatively, if you use VS Code, you can install the "Live Server" extension and click "Go Live" from the bottom bar while index.html is open.
 
 ## Technologies Used
-HTML5: For structuring the web content.
+**HTML5**: For structuring the web content.
 
-CSS3: For styling and creating the appealing, responsive layout, primarily using Tailwind CSS.
+**CSS3**: For styling and creating the appealing, responsive layout, primarily using Tailwind CSS.
 
-JavaScript (ES6+): For all interactive functionalities, DOM manipulation, and asynchronous operations (using Fetch API with Promises).
+**JavaScript** (ES6+): For all interactive functionalities, DOM manipulation, and asynchronous operations (using Fetch API with Promises).
 
-JSON Server: A lightweight server used to create a fake REST API quickly, providing persistence for blog posts to the db.json file.
+**JSON Server**: A lightweight server used to create a fake REST API quickly, providing persistence for blog posts to the db.json file.
 
 ## Support and Contact Details
 If you have any questions, suggestions, or need assistance, please contact:
